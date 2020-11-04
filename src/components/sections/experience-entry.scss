@@ -1,0 +1,21 @@
+.experience-entry {
+  &__company-name-and-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__company-description {
+    margin-bottom: 5px;
+  }
+
+  &__position-and-dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__position {
+    font-weight: 700;
+  }
+}
