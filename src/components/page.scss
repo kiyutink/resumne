@@ -1,0 +1,11 @@
+.page {
+  height: 297mm;
+  width: 210mm;
+  margin: 25px auto;
+  padding: 70px;
+  box-shadow: 0 0 10px rgba(black, 0.5);
+
+  @media print {
+    margin: 0;
+  }
+}
