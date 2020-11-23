@@ -1,12 +1,24 @@
+@import "../../mixins";
 .experience-entry {
+  position: relative;
+  margin-bottom: 15px;
+  margin-left: -70px;
+  padding-left: 70px;
+
   &__company-name-and-location {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
+  &__company-location {
+    border: none;
+    text-align: right;
+    @include base-font;
+  }
+
   &__company-description {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
 
   &__position-and-dates {
@@ -17,5 +29,9 @@
 
   &__position {
     font-weight: 700;
+  }
+
+  &__remove-button {
+   @include delete-button;
   }
 }

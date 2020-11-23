@@ -1,0 +1,8 @@
+@import "../../mixins";
+
+.input {
+  @include base-font;
+  border: none;
+  min-width: 50px;
+  max-width: calc(210mm - 140px);
+}

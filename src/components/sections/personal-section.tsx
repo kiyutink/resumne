@@ -1,21 +1,20 @@
 import "./personal-section.scss";
-import React, { useState } from "react";
-import { PersonalData } from "../../types/personal-data";
+import React from "react";
+import { Input } from "../shared/input";
 
 export const PersonalSection: React.FC = () => {
-  const [state, setState] = useState<PersonalData>({
-    fullName: "Kirill Kiiutin",
-    address: "Berlin, Germany",
-    email: "kiyutin@gmail.com",
-    phone: "555-555-555",
-  });
-  const { fullName, address, email, phone } = state;
   return (
     <div className="personal-section">
-      <div className="personal-section__name">{fullName}</div>
-      <div className="personal-section__address">{address}</div>
-      <div className="personal-section__phone-and-email">
-        <a href={`mailto:${email}`}>{email}</a> <b>·</b> {phone}
+      <div className="personal-section__row">
+        <Input name="name" className="personal-section__name" />
+      </div>
+      <div className="personal-section__row">
+        <Input name="address" className="personal-section__address" />
+      </div>
+      <div className="personal-section__row">
+        <Input name="phone" className="personal-section__phone-and-email" />
+        <b className="personal-section__separator">·</b>
+        <Input name="email" className="personal-section__email" />
       </div>
     </div>
   );

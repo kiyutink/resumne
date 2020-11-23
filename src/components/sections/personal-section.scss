@@ -1,15 +1,25 @@
 .personal-section {
+  &__row {
+    text-align: center;
+  }
   &__name {
     text-align: center;
     font-weight: 700;
+    display: block;
   }
 
   &__phone-and-email {
     text-align: center;
+    display: block;
   }
 
   &__address {
     text-align: center;
   }
-}
 
+  &__separator {
+    font-weight: 700;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}

@@ -3,3 +3,22 @@
     "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
 }
+
+@mixin delete-button {
+  border: none;
+  background: none;
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  top: 0px;
+  left: 45px;
+
+  :hover > & {
+    display: block;
+    @media print {
+      display: none;
+    }
+  }
+}
