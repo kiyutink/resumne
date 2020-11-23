@@ -1,3 +1,5 @@
+@import "../../mixins";
+
 .experience-section {
   margin-top: 5px;
 
@@ -7,21 +9,11 @@
   }
 
   &__add-button-container {
-    width: 100%;
     display: flex;
     justify-content: center;
   }
 
   &__add-button {
-    width: 100px;
-    background: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
-
-    @media print {
-      display: none;
-    }
+    @include add-button;
   }
 }

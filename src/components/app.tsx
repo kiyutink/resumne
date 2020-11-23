@@ -6,6 +6,7 @@ import { PersonalSection } from "./sections/personal-section";
 import { SummarySection } from "./sections/summary-section";
 import { EducationSection } from "./sections/education-section";
 import defaultData from "../default-data.json";
+import { OtherSection } from "./sections/other-section";
 
 export const App: React.FC = () => (
   <Formik
@@ -14,7 +15,10 @@ export const App: React.FC = () => (
         ? JSON.parse(localStorage.getItem("cvState")!)
         : defaultData
     }
-    onSubmit={(data) => localStorage.setItem("cvState", JSON.stringify(data))}
+    onSubmit={(data) => {
+      console.log(data)
+      localStorage.setItem("cvState", JSON.stringify(data));
+    }}
   >
     <Form>
       <Page>
@@ -22,6 +26,7 @@ export const App: React.FC = () => (
         <SummarySection />
         <ExperienceSection />
         <EducationSection />
+        <OtherSection />
         <button type="submit">Save</button>
       </Page>
     </Form>

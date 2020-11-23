@@ -1,5 +1,14 @@
+@import "../../mixins";
 .education-entry {
+  margin-bottom: 5px;
+  position: relative;
+  margin-left: -70px;
+  padding-left: 70px;
   &__school-name {
     font-weight: 700;
+  }
+
+  &__remove-button {
+    @include remove-button;
   }
 }

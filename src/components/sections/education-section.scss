@@ -1,6 +1,17 @@
+@import "../../mixins";
+
 .education-section {
   &__heading {
     border-bottom: 1px solid black;
     margin-bottom: 5px;
+  }
+
+  &__add-button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__add-button {
+    @include add-button;
   }
 }

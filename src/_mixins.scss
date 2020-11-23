@@ -4,7 +4,7 @@
   font-size: 14px;
 }
 
-@mixin delete-button {
+@mixin remove-button {
   border: none;
   background: none;
   display: none;
@@ -20,5 +20,18 @@
     @media print {
       display: none;
     }
+  }
+}
+
+@mixin add-button {
+  width: 100px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+
+  @media print {
+    display: none;
   }
 }

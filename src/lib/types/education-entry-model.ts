@@ -1,4 +1,5 @@
 export interface EducationEntryModel {
   schoolName: string;
-  program: string;
+  otherInfo : string;
+  id: string;
 }
