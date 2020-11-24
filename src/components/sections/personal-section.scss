@@ -11,6 +11,7 @@
   &__phone-and-email {
     text-align: center;
     display: block;
+    padding-left: 5px;
   }
 
   &__address {
@@ -21,5 +22,23 @@
     font-weight: 700;
     padding-right: 5px;
     padding-left: 5px;
+  }
+}
+
+.email-input {
+  display: inline-block;
+  &__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    &--edit {
+      visibility: hidden;
+    }
+  }
+  .personal-section:hover &__button {
+    &--edit {
+      visibility: visible;
+    }
   }
 }
