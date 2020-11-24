@@ -1,0 +1,15 @@
+.rich-text-editor {
+  ul {
+    padding-left: 25px;
+  }
+
+  &__attribution {
+    font-size: 7px;
+    text-align: right;
+    text-transform: uppercase;
+
+    @media print {
+      visibility: hidden;
+    }
+  }
+}

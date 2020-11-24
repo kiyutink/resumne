@@ -1,7 +1,7 @@
 import "./experience-entry.scss";
 import React from "react";
 import { Input } from "../shared/input";
-import { Textarea } from "../shared/textarea";
+import { RichTextEditor } from "../shared/rich-text-editor";
 
 export const ExperienceEntry: React.FC<{
   name: string;
@@ -35,10 +35,7 @@ export const ExperienceEntry: React.FC<{
         <Input className="experience-entry__dates" name={`${name}.dates`} />
       </div>
 
-      <Textarea
-        className="experience-entry__role-description"
-        name={`${name}.description`}
-      />
+      <RichTextEditor name={`${name}.description`} />
     </div>
   );
 };
