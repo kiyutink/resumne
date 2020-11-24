@@ -1,26 +1,35 @@
 {
-  "name": "Firtname Lastname",
-  "address": "Address",
-  "email": "email@email.email",
+  "name": "Mary Arbuckle",
+  "address": "San Francisco, CA 94107",
+  "email": "maryarbuckle@gmail.com",
   "phone": "555-555-555",
-  "summary": "Summary Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatem vitae labore ratione dolore. Aperiam nemo consectetur error cum aliquam beatae, quaerat, commodi rem quas voluptate cupiditate porro explicabo laudantium eos. Impedit nulla atque adipisci labore neque minus explicabo ducimus, maiores rerum! Sapiente mollitia iste nemo officia corrupti assumenda eligendi.",
+  "summary": "Accomplished senior marketing executive with a proven ability to grow revenue and market share and increase brand awareness for B2B software companies using digital media and traditional marketing. Extensive experience at both Fortune 100 companies and technology startups.\nExpertise includes:\n- Product Marketing\n- Marketing Strategy Social Media\n- Demand Generation\n- Teambuilding",
   "experience": [
     {
-      "companyName": "Company name",
-      "companyLocation": "Company location",
-      "companyDescription": "Company description",
-      "dates": "Start date - End date",
-      "position": "Position",
-      "description": "Description",
+      "companyName": "SM Media",
+      "companyLocation": "San Francisco, CA",
+      "companyDescription": "Startup that provides cloud-based social media sales and marketing software to large corporations.",
+      "dates": "2011 - 2013",
+      "position": "Vice President - Marketing",
+      "description": "Responsible for global marketing with a focus on North America and EMEA. Member of Executive Staff, tasked with overall business strategy and execution. Hired and managed 7-person team.\n• Product Marketing: Developed innovative go-to-market strategy for key verticals including\nfinancial services, insurance, and direct sales. Created “Social Sales” messaging and dozens of\nvertical content pieces, including blog posts, e-books, and videos.\n• Demand Generation: Increased pipeline by 10X and qualified leads by 20X. Created demand\ngeneration strategy with innovative customer reference marketing (videos, PR, testimonials),\ntargeted events, and marketing automation.",
       "id": "1"
+    },
+    {
+      "companyName": "Acme Co San Francisco, CA",
+      "companyLocation": "San Francisco, CA",
+      "companyDescription": "Provider of SaaS software for global brands including Quaker, Intuit, General Mills, and Nestle.",
+      "position": "Senior Vice President - Global Marketing",
+      "dates": "2009 - 2011",
+      "description": "Responsible for marketing strategy and product thought leadership. Reported to CEO and was member of Executive Staff. Drove strategy for key verticals and expansion into new markets.\n• Demand Generation: Increased pipeline by 2X in 12 months and drove 75% of revenue in new markets. Developed company’s first demand generation programs. Implemented marketing automation software. Hired and managed sales development team.\n• Product Marketing: Created vertical go-to-market strategy, developed web content, and messaging. Conceived of “TreeData” product resulting in significant market differentiation in consumer research segment.\n• PR/AR: Obtained coverage in WSJ, Forbes, Bloomberg, BusinessWeek, Fortune, Financial Times,\nFast Company (cover), and speaking opportunities for CEO, including World Economic Forum\n(Davos). Awarded Fast Company “Cool Company” Award.",
+      "id": "7f0fb187-5fe0-485b-88d3-6af41da20d96"
     }
   ],
   "education": [
     {
       "id": "1",
-      "otherInfo": "Received qualifications, Field, Year finished",
-      "schoolName": "School name"
+      "otherInfo": "BS, Electrical Engineering, 1988. President’s Honor Roll",
+      "schoolName": "University of Texas, Austin"
     }
   ],
-  "other": "Any other info that might be relevant"
+  "other": "Cordon Bleu trained chef\nFrequent speaker at conferences on subject of social media and online marketing"
 }
