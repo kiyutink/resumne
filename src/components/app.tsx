@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Formik } from "formik";
+import { Persist } from "formik-persist";
 import { Page } from "./page";
 import { ExperienceSection } from "./sections/experience-section";
 import { PersonalSection } from "./sections/personal-section";
@@ -9,25 +10,15 @@ import defaultData from "../default-data.json";
 import { OtherSection } from "./sections/other-section";
 
 export const App: React.FC = () => (
-  <Formik
-    initialValues={
-      localStorage.getItem("cvState")
-        ? JSON.parse(localStorage.getItem("cvState")!)
-        : defaultData
-    }
-    onSubmit={(data) => {
-      console.log(data)
-      localStorage.setItem("cvState", JSON.stringify(data));
-    }}
-  >
+  <Formik onSubmit={() => {}} initialValues={defaultData}>
     <Form>
       <Page>
+        <Persist name="cvState" />
         <PersonalSection />
         <SummarySection />
         <ExperienceSection />
         <EducationSection />
         <OtherSection />
-        <button type="submit">Save</button>
       </Page>
     </Form>
   </Formik>
