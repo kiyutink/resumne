@@ -19,6 +19,7 @@ export const Email: React.FC<{ name: string; className: string }> = ({
       <span className="email-input">
         <AutosizeInput
           {...field}
+          autoFocus
           inputClassName={classNames("input", "email-input__input", className)}
         />
         <button onClick={toggle} className="email-input__button">
