@@ -6,11 +6,11 @@ import { ExperienceSection } from "./sections/experience-section";
 import { PersonalSection } from "./sections/personal-section";
 import { SummarySection } from "./sections/summary-section";
 import { EducationSection } from "./sections/education-section";
-import defaultData from "../default-data.json";
+import exampleData from "../example-data.json";
 import { OtherSection } from "./sections/other-section";
 
 export const App: React.FC = () => (
-  <Formik onSubmit={() => {}} initialValues={defaultData}>
+  <Formik onSubmit={() => {}} initialValues={exampleData}>
     <Form>
       <Page>
         <Persist name="cvState" />

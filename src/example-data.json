@@ -1,0 +1,26 @@
+{
+  "name": "Mary Arbuckle",
+  "address": "San Francisco, CA 94107",
+  "email": "maryarbuckle@gmail.com",
+  "phone": "415-388-3865",
+  "summary": "Accomplished senior marketing executive with a proven ability to grow revenue and market share and increase brand awareness for B2B software companies using digital media and traditional marketing. Extensive experience at both Fortune 100 companies and technology startups.",
+  "experience": [
+    {
+      "companyName": "SM Media",
+      "companyLocation": "",
+      "companyDescription": "",
+      "dates": "",
+      "position": "",
+      "description": "",
+      "id": "1"
+    }
+  ],
+  "education": [
+    {
+      "id": "1",
+      "otherInfo": "",
+      "schoolName": "y"
+    }
+  ],
+  "other": "- This CV was created using my service\n- Language knowledge"
+}
