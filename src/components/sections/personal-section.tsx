@@ -22,7 +22,11 @@ export const Email: React.FC<{ name: string; className: string }> = ({
           autoFocus
           inputClassName={classNames("input", "email-input__input", className)}
         />
-        <button onClick={toggle} className="email-input__button">
+        <button
+          title="Click to save"
+          onClick={toggle}
+          className="email-input__button"
+        >
           <i className="fa fa-check" />
         </button>
       </span>
@@ -34,6 +38,7 @@ export const Email: React.FC<{ name: string; className: string }> = ({
           {field.value}
         </a>
         <button
+          title="Click to edit email"
           onClick={toggle}
           className="email-input__button email-input__button--edit"
         >
