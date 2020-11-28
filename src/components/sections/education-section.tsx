@@ -11,30 +11,40 @@ export const EducationSection: React.FC = () => {
     <div className="education-section">
       <div className="education-section__heading">Education</div>
       <FieldArray name="education">
-        {({ form, push, remove }) => (
+        {({ form, remove, insert, move }) => (
           <Fragment>
             {form.values[name].map(
-              (value: EducationEntryModel, index: number) => (
+              (
+                value: EducationEntryModel,
+                i: number,
+                values: EducationEntryModel[]
+              ) => (
                 <EducationEntry
-                  name={`${name}[${index}]`}
+                  name={`${name}[${i}]`}
                   key={value.id}
                   onRemove={() => {
-                    remove(index);
+                    remove(i);
                   }}
+                  onInsert={() => {
+                    insert(i + 1, createEducationEntry());
+                  }}
+                  onMoveUp={
+                    i === 0
+                      ? null
+                      : () => {
+                          move(i, i - 1);
+                        }
+                  }
+                  onMoveDown={
+                    i === values.length - 1
+                      ? null
+                      : () => {
+                          move(i, i + 1);
+                        }
+                  }
                 />
               )
             )}
-            <div className="education-section__add-button-container">
-              <button
-                type="button"
-                className="education-section__add-button"
-                onClick={() => {
-                  push(createEducationEntry());
-                }}
-              >
-                <i className="fa fa-plus" /> Add
-              </button>
-            </div>
           </Fragment>
         )}
       </FieldArray>

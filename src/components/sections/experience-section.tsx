@@ -12,30 +12,40 @@ export const ExperienceSection: React.FC = () => {
       <div className="experience-section__heading">Experience</div>
       <div className="experience-section__list">
         <FieldArray name={name}>
-          {({ form, push, remove }) => (
+          {({ form, remove, insert, move }) => (
             <Fragment>
               {form.values[name].map(
-                (value: ExperienceEntryModel, i: number) => (
+                (
+                  value: ExperienceEntryModel,
+                  i: number,
+                  values: ExperienceEntryModel[]
+                ) => (
                   <ExperienceEntry
                     name={`${name}[${i}]`}
                     key={value.id}
                     onRemove={() => {
                       remove(i);
                     }}
+                    onInsert={() => {
+                      insert(i + 1, createExperienceEntry());
+                    }}
+                    onMoveUp={
+                      i === 0
+                        ? null
+                        : () => {
+                            move(i, i - 1);
+                          }
+                    }
+                    onMoveDown={
+                      i === values.length - 1
+                        ? null
+                        : () => {
+                            move(i, i + 1);
+                          }
+                    }
                   />
                 )
               )}
-              <div className="experience-section__add-button-container">
-                <button
-                  type="button"
-                  className="experience-section__add-button"
-                  onClick={() => {
-                    push(createExperienceEntry());
-                  }}
-                >
-                  <i className="fa fa-plus" /> Add
-                </button>
-              </div>
             </Fragment>
           )}
         </FieldArray>

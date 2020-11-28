@@ -31,7 +31,11 @@
     font-weight: 700;
   }
 
-  &__remove-button {
-   @include remove-button;
+  &__buttons {
+    @include buttons-left;
+  }
+
+  &__button {
+    @include button;
   }
 }

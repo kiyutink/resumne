@@ -4,34 +4,26 @@
   font-size: 14px;
 }
 
-@mixin remove-button {
-  border: none;
-  background: none;
+@mixin buttons-left {
   display: none;
   position: absolute;
-  cursor: pointer;
-  padding-left: 5px;
+  top: 0;
+  left: 0;
+  width: 70px;
   padding-right: 5px;
-  top: 0px;
-  left: 45px;
+  justify-content: flex-end;
 
   :hover > & {
-    display: block;
+    display: flex;
     @media print {
       display: none;
     }
   }
 }
 
-@mixin add-button {
-  width: 100px;
-  background: white;
+@mixin button {
   border: none;
-  border-radius: 5px;
-  padding: 5px;
+  background: none;
   cursor: pointer;
-
-  @media print {
-    display: none;
-  }
+  padding: 2px;
 }

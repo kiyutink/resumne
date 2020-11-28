@@ -1,5 +1,5 @@
 import "./personal-section.scss";
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import classNames from "classnames";
 import AutosizeInput from "react-input-autosize";
 
