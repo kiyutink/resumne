@@ -11,3 +11,7 @@
 html {
   @include base-font;
 }
+
+@page {
+  size: a4;
+}
